@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright © 2025 Imre Toth <tothimre@gmail.com> - Proprietary Software. See LICENSE file for terms.
 test_complex_smartmerge_diverged() {
   echo "=== TEST 2: DIVERGED MERGE (EXPECT 5 COMMITS) ==="
   local test_dir=$(mktemp -d)
