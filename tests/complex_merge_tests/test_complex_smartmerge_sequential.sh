@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Copyright © 2025 Imre Toth <tothimre@gmail.com> - Proprietary Software. See LICENSE file for terms.
 test_complex_smartmerge_sequential() {
   echo "=== TEST 1: SEQUENTIAL MERGE (EXPECT 4 COMMITS) ==="
