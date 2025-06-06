@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Copyright © 2025 Imre Toth <tothimre@gmail.com> - Proprietary Software. See LICENSE file for terms.
 test_smartmerge_conflict_resolution() {
   echo "⚔️ === TEST: CONFLICT RESOLUTION ==="
   local test_dir=$(mktemp -d)
