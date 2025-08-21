@@ -65,7 +65,7 @@ smartmerge() {
       return 1
     }
     git commit -m "Merged $source_branch (squashed)
-    
+
 Contains changes from:
 $commit_list" || {
       echo "❌ Failed to create squash commit"
