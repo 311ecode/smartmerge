@@ -11,7 +11,7 @@ test_smartmerge_fast_forward() {
   git init >/dev/null
   git config --local user.name "Test"
   git config --local user.email "test@example.com"
-  
+
   # Create main branch (force it to be called main)
   echo "🌟 Creating main branch..."
   echo "initial" > initial.txt
@@ -31,7 +31,7 @@ test_smartmerge_fast_forward() {
   # Go back to main for merge
   echo "🔄 Switching back to main..."
   git checkout main >/dev/null
-  
+
   # Debug: Show branch status
   echo "🔍 Debug - Current branches:"
   git branch -a
@@ -48,7 +48,7 @@ test_smartmerge_fast_forward() {
   # Verify
   local commit_count=$(git rev-list --count main)
   echo "📊 Final commit count: $commit_count"
-  
+
   if [ "$commit_count" -eq 2 ]; then
     echo "✅ PASSED: Fast-forward merge successful!"
   else

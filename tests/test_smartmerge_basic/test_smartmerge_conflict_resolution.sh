@@ -11,7 +11,7 @@ test_smartmerge_conflict_resolution() {
   git init >/dev/null
   git config --local user.name "Test"
   git config --local user.email "test@example.com"
-  
+
   # Create main branch
   echo "🌟 Creating main branch..."
   echo "original content" > conflict.txt

@@ -12,7 +12,7 @@ test_complex_smartmerge_diverged() {
   git init >/dev/null
   git config --local user.name "Test"
   git config --local user.email "test@example.com"
-  
+
   echo "🌟 Creating initial commits on main branch..."
   for i in {1..3}; do
     echo "main-$i" >file$i
@@ -20,7 +20,7 @@ test_complex_smartmerge_diverged() {
     git commit -m "Main commit $i" >/dev/null
     echo "✅ Created main commit $i"
   done
-  
+
   # Force branch to be called main
   git branch -M main
   echo "✅ Set default branch to main"
@@ -42,7 +42,7 @@ test_complex_smartmerge_diverged() {
     cd - >/dev/null && rm -rf "$test_dir"
     return 1
   }
-  
+
   echo "main-4" >file4
   git add file4
   git commit -m "Main commit 4" >/dev/null

@@ -11,7 +11,7 @@ test_smartmerge_squash_merge() {
   git init >/dev/null
   git config --local user.name "Test"
   git config --local user.email "test@example.com"
-  
+
   # Create main branch with initial commits
   echo "🌟 Creating main branch with initial commits..."
   for i in {1..2}; do
@@ -59,7 +59,7 @@ test_smartmerge_squash_merge() {
   # Verify
   local commit_count=$(git rev-list --count main)
   echo "📊 Final commit count: $commit_count"
-  
+
   if [ "$commit_count" -eq 4 ]; then
     echo "✅ PASSED: Squash merge successful!"
     echo "🔍 Final commit log:"
