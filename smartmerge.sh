@@ -2,7 +2,7 @@
 # Copyright © 2025 Imre Toth <tothimre@gmail.com> - Proprietary Software. See LICENSE file for terms.
 
 smartmerge() {
-  eval "$(markdown-show-help-registration --minimum-parameters 1)"
+  command -v markdown-show-help-registration &>/dev/null && eval "$(markdown-show-help-registration --minimum-parameters 1)"
   # Debug mode
   local debug=false
   [[ $1 == "--debug" ]] && {
