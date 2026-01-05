@@ -14,7 +14,7 @@ test_smartmerge_fast_forward() {
 
   # Create main branch (force it to be called main)
   echo "🌟 Creating main branch..."
-  echo "initial" > initial.txt
+  echo "initial" >initial.txt
   git add initial.txt
   git commit -m "Initial commit" >/dev/null
   git branch -M main
@@ -23,7 +23,7 @@ test_smartmerge_fast_forward() {
   # Create feature branch
   echo "🌿 Creating feature branch..."
   git checkout -b feature >/dev/null
-  echo "feature-content" > feature.txt
+  echo "feature-content" >feature.txt
   git add feature.txt
   git commit -m "Feature commit" >/dev/null
   echo "✅ Feature branch created with 1 commit"

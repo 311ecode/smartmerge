@@ -14,7 +14,7 @@ test_smartmerge_conflict_resolution() {
 
   # Create main branch
   echo "🌟 Creating main branch..."
-  echo "original content" > conflict.txt
+  echo "original content" >conflict.txt
   git add conflict.txt
   git commit -m "Initial commit" >/dev/null
   git branch -M main
@@ -23,14 +23,14 @@ test_smartmerge_conflict_resolution() {
   # Create feature branch with conflicting change
   echo "🌿 Creating feature branch with conflict..."
   git checkout -b feature >/dev/null
-  echo "feature content" > conflict.txt
+  echo "feature content" >conflict.txt
   git add conflict.txt
   git commit -m "Feature change" >/dev/null
 
   # Add conflicting change to main
   echo "🔄 Adding conflicting change to main..."
   git checkout main >/dev/null
-  echo "main content" > conflict.txt
+  echo "main content" >conflict.txt
   git add conflict.txt
   git commit -m "Main change" >/dev/null
 

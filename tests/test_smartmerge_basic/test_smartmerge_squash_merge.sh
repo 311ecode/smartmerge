@@ -15,7 +15,7 @@ test_smartmerge_squash_merge() {
   # Create main branch with initial commits
   echo "🌟 Creating main branch with initial commits..."
   for i in {1..2}; do
-    echo "main-$i" > "main$i.txt"
+    echo "main-$i" >"main$i.txt"
     git add "main$i.txt"
     git commit -m "Main commit $i" >/dev/null
     echo "✅ Created main commit $i"
@@ -26,7 +26,7 @@ test_smartmerge_squash_merge() {
   echo "🌿 Creating feature branch with multiple commits..."
   git checkout -b feature >/dev/null
   for i in {1..3}; do
-    echo "feature-$i" > "feature$i.txt"
+    echo "feature-$i" >"feature$i.txt"
     git add "feature$i.txt"
     git commit -m "Feature commit $i" >/dev/null
     echo "✅ Created feature commit $i"
@@ -35,7 +35,7 @@ test_smartmerge_squash_merge() {
   # Add one more commit to main to force divergence
   echo "🔄 Adding divergent commit to main..."
   git checkout main >/dev/null
-  echo "main-3" > "main3.txt"
+  echo "main-3" >"main3.txt"
   git add "main3.txt"
   git commit -m "Main commit 3" >/dev/null
   echo "✅ Created divergent main commit"

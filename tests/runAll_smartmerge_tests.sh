@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Copyright © 2025 Imre Toth <tothimre@gmail.com> - Proprietary Software. See LICENSE file for terms.
 
-runAll_smartmerge_tests(){
+runAll_smartmerge_tests() {
   # Fix for localization issue with decimal points
   # export LC_NUMERIC=C
 
@@ -15,7 +15,6 @@ runAll_smartmerge_tests(){
     "test_complex_smartmerge_sequential"
 
   )
-
 
   local ignored_suites=(
 
