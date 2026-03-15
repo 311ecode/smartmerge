@@ -95,4 +95,4 @@ $commit_list" || {
   echo "Note: Original commits remain available in $source_branch branch"
 }
 
-registerToFunctionsDB
+# registerToFunctionsDB
